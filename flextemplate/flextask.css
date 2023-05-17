@@ -1,0 +1,135 @@
+header{
+	border: solid black 2px;
+	
+	height:100px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+
+
+}
+.logo{
+	
+	align-self: center;
+	font-size: medium;
+	height: 50px;
+	width: 180px;
+	background-image: url("/home/aayush/Downloads/google.png");
+	background-size:cover;
+	
+
+}
+a{
+	color: white;
+	text-decoration:none;
+	font-size: large;
+
+}
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	list-style:none;
+}
+.nav{
+	background: gray;
+	height: 50px;
+	width: 480px;
+	align-self: center;
+}
+main{
+	
+	display:flex;
+	
+	
+	
+
+}
+aside{
+	width:320px;
+	background: gray;
+	height:960px;
+	text-align:center;
+	box-shadow:3px 2px 6px 1px dimgray;
+	z-index: 4;
+	
+}
+.content{
+	width: 85%;
+}
+.upperboxes{
+	
+	width: 100%;
+	height: 320px;
+	display:flex;
+	flex-wrap: wrap;
+}
+.box1{
+	width:50%;
+	height: 320px;
+	background: blue;
+	
+
+}
+.box2{
+	width: 50%;
+	height: 320px;
+	background: lightblue;
+	
+
+}
+.middleboxes{
+	
+	width: 100%;
+	height: 320px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.mbox1{
+	width: 33.33%;
+	height: 320px;
+	background:red;
+
+
+}
+.mbox2{
+	width: 33.33%;
+	height: 320px;
+	background: orange;
+	
+}
+.mbox3{
+	width: 33.33%;
+	height: 320px;
+	background: gold;
+	
+}
+
+.lowerboxes{
+	width: 100%;
+	height: 320px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction:row ;
+
+}
+.lbox1{
+	width: 33.33%;
+	height: 320px;
+	background:yellowgreen;
+	
+}
+.lbox2{
+	width: 33.33%;
+	
+	height: 320px;
+	background: orangered;
+}
+
+.lbox3{
+	width: 33.33%;
+	
+	height: 320px;
+	background: yellow;
+	
+}

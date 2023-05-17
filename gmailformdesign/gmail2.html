@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" type="text/css" href="gmail2.css">
+			<title></title>
+		</head>
+		<body>
+			<section class="main-box"><!-- main section border -->
+				
+				<div class="second-box"><!-- inner section --> 
+					
+
+					<!-- google logo section-->
+					<section>
+						<img class=" image" src="/home/aayush/Downloads/google.png">
+					</section>
+
+
+					<!-- main heading section-->
+					<section>
+						<p class="heading">Create your Google Account</p>
+					</section>
+
+					<!-- form for information of users -->
+					<form class="fff" name ="nextform" onsubmit="return validate()">
+
+
+						<!--  name input section -->
+
+						<section class="data-enter">
+							<input class="firstname" type="text" name="name" >
+							<span class="place">First name</span>
+							<input class="secondname" type="text" name="name" >
+							<span class="holder">Last name</span>
+							<span><div id="x_error"> Enter first and last name</div></span>	
+
+						</section>
+						
+
+						<!-- username input section-->
+						
+						<section class="user-enter">	
+							<input class="username" type="email" name="email" >
+							<span class="placeholder">username</span>
+							<span><div id="y_error">Use my current email address instead</div></span>
+						</section>
+
+
+
+						<fieldset class="set">
+							@gmail.com
+						</fieldset>
+
+
+
+						<section>
+							<p class="f-content"> You can use letters, numbers & periods </p>
+
+						</section>
+						<!-- password input section-->
+						<section class="pass-con">
+							<input class="password" type="password" name="password" >
+							<span class="word">password</span>
+							<input class="confirm" type="password" name="password">
+							<span class="firm">confirm</span>
+							<span><div id="z_error"> Use 8 or more characters with a mix of letters ,numbers & <br>symbols</div></span>	
+						</section>
+						<!-- checkbox section-->
+						<section>
+							<input class ="show" type="checkbox" name="checkbox" >
+							<lebel class="show-text">Show password</lebel>
+						</section>
+
+						<input  class="next" type="submit" value="Next" required > <!--submit button-->
+					</form>
+
+
+					<section class="xyz">
+						<a class="sign" href="Gmail.html" target="_self">Sign in instead</a>	 
+					</section>
+
+					<!-- logo section-->
+					<figure class="logo-section">
+						<img class="logo" src="/home/aayush/Downloads/nextlogo.svg">
+						<figcaption class="cap"> One account. All of Google working for you.</figcaption>
+					</figure>
+
+
+				</div><!--inner div closing-->
+
+			</section><!-- main section border closing-->
+
+			<footer>
+				<ul class="languages">
+					<li>English (United Kingdom)</li>
+				</ul>
+
+				<ul class="navi">
+					<li class="menu-list">Help</li>
+					<li class="menu-list">Privacy</li>
+					<li class="menu-list">Terms</li>
+
+				</ul>
+			</footer>
+
+
+		</body>
+
+
+		<script>
+			function validate(){
+
+				var x =document.forms ["nextform"]["name"].value;
+				var y =document.forms ["nextform"]["email"].value;
+				var z =document.forms ["nextform"]["password"].value;
+				var x_error=document.getElementById('x_error');
+				var y_error=document.getElementById('y_error');
+				var z_error=document.getElementById('z_error');
+
+
+				if(x == "" && y == "" && z == "")
+				{
+					x_error.style.visibility="visible";
+					y_error.style.visibility="visible";
+					z_error.style.visibility="visible";
+					return false;
+				}
+				else if (x == "number"){
+					x_error.style.visibility="visible";
+					return false;
+
+				}
+				else if (y == ""){
+					y_error.style.visibility="visible";
+					return false;
+				}
+				else if (z == "NaN"){
+					z_error.style.visibility="visible";
+					return false;
+				}
+				else{
+					alert("Submitted succesfully");
+					return true;
+				}
+			}	
+		</script>
+	</html>

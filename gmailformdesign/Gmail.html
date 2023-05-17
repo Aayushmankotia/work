@@ -1,0 +1,147 @@
+<Doctype HTML>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>G-mail.com</title>
+        <link rel="stylesheet" type="text/css" href="gmail.css">
+        <!-- <link rel="icon" type="image/x-icon" href="/home/aayush/Downloads/G.png">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+
+       <!--main section -->
+       <section class="main-section-border">
+
+
+        <!-- inner section for padding -->
+            <div class="main-div">
+
+
+                <!-- header section start from here -->
+                <header>
+                    <img src="/home/aayush/Downloads/google.png">
+                </header>
+                <!-- end of header section-->
+
+                <!--inner content-->
+
+
+                <section>
+                    <p class="first">Sign in</p>
+                </section>
+
+                <section >
+                    <p class="second">Use your Google Account</p>
+                </section>
+
+
+                <!-- form input -->
+                <form name ="myform"  onsubmit="return validation()" >
+
+
+                    <fieldset class="set"> 
+                        <input id="mail" type="Email"  name ="email" >
+                        <span class="placeholder">Email or phone</span>
+                        <span><div id="mail_error"> please enter email or phone </div></span>
+                    </fieldset>
+
+                    <input  class="next" type="submit" value="Next">
+
+                </form>
+                <!-- *****-->
+
+
+
+                <!-- links -->
+                <a class="forgot"  href="#">Forgot email?</a>
+
+                <p class="last">Not your computer? Use Guest mode to sign in privately.</p>
+
+                <a class="more" href="#">Learn more</a>
+
+
+                <!-- dropdown button-->
+                <section>
+                    <button class="create" onclick="xyz()"> Create account</button>
+                </section>
+
+
+
+
+
+            </div><!-- main div closing-->
+            <!-- pop-up box-->
+            <ol id="popup">
+                <li class="pop-list">
+                    <a href="gmail2.html" class="anchor-popup" target="_">For myself </a>
+                </li>
+                <li class="pop-list">
+                    <a href="" class="anchor-popup">For my child </a>
+                </li>
+                <li class="pop-list">
+                    <a href="" class="anchor-popup" >To manage my business</a>
+                </li>
+
+
+            </ol>
+
+
+        </section><!-- main section closing-->
+
+
+        <!-- footer section-->
+        <footer>
+
+            <ul class="languages">
+                <li>English (United Kingdom)</li>
+            </ul>
+
+            <ul class="navi">
+                <li class="menu-list">Help</li>
+                <li class="menu-list">Privacy</li>
+                <li class="menu-list">Terms</li>
+
+            </ul>
+
+        </footer>
+             <!-- ********-->
+
+
+
+            <!-- java script -->
+        <script>
+                function xyz(){
+                    var x= document.getElementById('popup');
+                    if(x.style.display === "block"){
+                     x.style.display="none";
+
+                 }else{
+                  x.style.display="block";
+              }
+
+          }
+          function validation(){
+            var mail =document.forms ["myform"]["email"].value;
+            var mail_error=document.getElementById('mail_error');
+            if(mail == ""){
+                mail_error.style.visibility="visible";
+                return false;
+            }
+            else{
+                alert("Submitted succesfully");
+                return true;
+            }
+        }   
+
+        </script>
+
+
+    </body>
+    </html>

@@ -1,0 +1,165 @@
+
+#bodyall
+{
+    font-size: 22px;
+}
+
+header{
+    background-color: #333;
+    position: sticky;
+    top:0px;
+    z-index: 2;
+    font-size: 22px;
+}
+nav{
+    height: 50px;
+    width:100%;
+   }
+.top {
+    display: flex;
+    justify-content: left;
+    grid-column-gap: 73px;
+    margin-left: 10%;
+    padding-top: 10px;
+}
+.anchor{
+   color: gray;
+   font-size:20px;
+   
+}
+.anchor:hover{
+    color: white;
+}
+.portanchor{
+   color: white;
+   text-decoration:none;
+   font-size: 20px;
+  
+}
+h1{
+    padding-top: 2%;
+    padding-left:10%;
+    display:inline-block;
+}
+.recentwork{
+    display: inline-block;
+    font-size: 26px;
+    margin-left:1px;
+    color: gray;
+}
+.h-row{
+    width: 80%;
+}
+.getup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    grid-column-gap: 0%;
+}
+.first{
+    width:40%;
+}
+h2{
+  color:lightskyblue;
+}
+
+ul{
+    display: flex;
+    letter-spacing: 15px;
+    justify-content: center;
+}
+li{
+    border: solid powderblue 1px;
+    background-color:aliceblue;
+    list-style: none;
+    padding: 10px  0px 0px 14px;
+}
+li:hover{
+    font-size: 25px;
+    border: transparent;
+    background-color: white;
+}
+.secondpartmain{
+    background-color:lightblue;
+    padding-top: 2%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    grid-gap: 1%;
+}
+.firstarticle{
+    width:30%;
+    text-align: center;
+    margin-bottom: 2%;
+    border: solid powderblue 2px;
+}
+.secondarticle{
+    width: 30%;
+    text-align: center;
+   border: solid powderblue 2px; 
+   margin-bottom: 2%;
+}
+.thirdarticle{  
+     width: 30%;
+    text-align: center;
+border: solid powderblue 2px;
+margin-bottom: 2%;
+}
+.artimg{
+    width:80px;
+    height:80px;
+}
+/*.logoimg{
+    width:80px;
+    margin:0px 0px 0px 120px;
+    display: inline-block;
+}
+div{
+display: flex;
+flex-wrap: wrap;
+grid-gap: 5%;
+}*/
+.pagginationlinks:hover{
+    color: seagreen;
+}
+.navigationbuttos
+{
+    text-decoration:none;      
+}
+img{
+    width:50%;
+}
+button:hover{
+    color: blue;
+    background-color: white;
+}
+button{
+    border: 1px black solid;
+    background-color:steelblue;
+    color:darkblue;
+    height: 30px;
+    border-radius: 4px;
+}
+footer{
+    text-align: center;
+    margin-top:2%;
+    padding-bottom: 2%;
+}
+@media(max-width: 710px){
+    .top {
+    justify-content:space-around;
+     grid-column-gap:0px; 
+    margin-left: 0%; 
+    padding-top: 10px;
+   
+}
+    nav{
+    width:100%;
+   }
+
+}
+
+
+
+

@@ -1,3 +1,6 @@
+*{
+	margin: 0;
+}
 header{
 	border: solid black 2px;
 	
@@ -14,13 +17,14 @@ header{
 	font-size: medium;
 	height: 50px;
 	width: 180px;
-	background-image: url("/home/aayush/Downloads/google.png");
+	background-image: url("images/google.png");
 	background-size:cover;
+	
 	
 
 }
 a{
-	color: white;
+	color: rgb(31, 140, 190);
 	text-decoration:none;
 	font-size: large;
 
@@ -32,7 +36,7 @@ ul{
 	list-style:none;
 }
 .nav{
-	background: gray;
+
 	height: 50px;
 	width: 480px;
 	align-self: center;

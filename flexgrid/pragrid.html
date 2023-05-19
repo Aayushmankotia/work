@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width:80%;
+            height:880px;
+            display:grid;
+            background-color: rgb(7, 28, 46);
+            /* grid-template-columns:1fr 2fr 1fr ; */
+            /* grid-template-rows: 154px 152px 150px; */
+            margin:auto;
+            /* justify-items:center;
+            align-content: space-evenly; */
+            grid-gap:4px 4px;
+            padding: 4px;
+
+        }
+        /* .box{
+           
+        } */
+        #col{
+           background-color:red;
+           grid-row:1/5;
+         }
+        #col1{
+         background-color:rgb(202, 135, 11);
+         grid-column:2/5;
+        }
+        #col2{
+           background-color:rgb(99, 228, 24);
+           grid-column:2/3;
+        }
+        #col3{
+            background-color:rgb(49, 228, 168);
+           grid-column:2/3;
+
+        }
+        #col4
+        {background-color:rgb(11, 56, 153);
+            grid-area: 2/3/2/5;
+
+        }
+        #col5{background-color:rgb(228, 253, 2);
+            grid-row:3/5/3/2;
+        
+        }
+        #col6{background-color:rgb(255, 0, 191);}
+        #col7{background-color:rgb(162, 0, 255);}
+        #col8{background-color:rgb(255, 0, 85);}
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>this is flex box</h1>
+    <div class="container">
+
+        <div class="box" id="col">
+
+        </div>
+        <div class="box" id="col1"></div>
+        <div class="box" id="col2"></div>
+        <div class="box" id="col3"></div>
+        <div class="box" id="col4"></div>
+        <div class="box" id="col5"></div>
+        <div class="box" id="col6"></div>
+        <div class="box" id="col7"></div>
+        <div class="box" id="col8"></div>
+    </div>
+    
+</body>
+</html>
